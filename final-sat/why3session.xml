@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE why3session PUBLIC "-//Why3//proof session v5//EN"
+"http://why3.lri.fr/why3session.dtd">
+<why3session shape_version="5">
+<prover id="0" name="Alt-Ergo" version="2.2.0" timelimit="5" steplimit="0" memlimit="1000"/>
+<file name="../final-sat.mlw">
+<theory name="NumOf">
+ <goal name="VC infix ==" expl="VC for infix ==">
+ </goal>
+ <goal name="VC numof_decreases" expl="VC for numof_decreases">
+ </goal>
+</theory>
+<theory name="Sat">
+ <goal name="VC infix ==" expl="VC for infix ==" proved="true">
+ <proof prover="0"><result status="valid" time="0.01" steps="1"/></proof>
+ </goal>
+ <goal name="VC cnf" expl="VC for cnf" proved="true">
+ <proof prover="0"><result status="valid" time="0.01" steps="6"/></proof>
+ </goal>
+ <goal name="VC is_clause_sat" expl="VC for is_clause_sat" proved="true">
+ <proof prover="0"><result status="valid" time="1.28" steps="5130"/></proof>
+ </goal>
+ <goal name="VC is_clause_conflict" expl="VC for is_clause_conflict" proved="true">
+ <proof prover="0"><result status="valid" time="0.31" steps="1635"/></proof>
+ </goal>
+ <goal name="VC is_clause_unit_unr" expl="VC for is_clause_unit_unr" proved="true">
+ <proof prover="0"><result status="valid" time="0.45" steps="3601"/></proof>
+ </goal>
+ <goal name="VC is_clause_unit_unr2" expl="VC for is_clause_unit_unr2" proved="true">
+ <proof prover="0"><result status="valid" time="0.04" steps="227"/></proof>
+ </goal>
+ <goal name="VC partial_eval_clause" expl="VC for partial_eval_clause" proved="true">
+ <proof prover="0"><result status="valid" time="1.59" steps="6391"/></proof>
+ </goal>
+ <goal name="VC is_Sat" expl="VC for is_Sat" proved="true">
+ <proof prover="0"><result status="valid" time="0.05" steps="337"/></proof>
+ </goal>
+ <goal name="VC is_Conflict" expl="VC for is_Conflict" proved="true">
+ <proof prover="0"><result status="valid" time="0.07" steps="456"/></proof>
+ </goal>
+ <goal name="VC is_Unit" expl="VC for is_Unit" proved="true">
+ <proof prover="0"><result status="valid" time="0.16" steps="933"/></proof>
+ </goal>
+ <goal name="VC partial_eval_cnf" expl="VC for partial_eval_cnf" proved="true">
+ <proof prover="0"><result status="valid" time="0.21" steps="1099"/></proof>
+ </goal>
+ <goal name="VC backtrack" expl="VC for backtrack" proved="true">
+ <proof prover="0"><result status="valid" time="0.70" steps="3190"/></proof>
+ </goal>
+ <goal name="VC find_unassigned_clause" expl="VC for find_unassigned_clause" proved="true">
+ <proof prover="0"><result status="valid" time="0.06" steps="420"/></proof>
+ </goal>
+ <goal name="VC find_unassigned" expl="VC for find_unassigned">
+ <proof prover="0"><result status="unknown" time="0.03"/></proof>
+ </goal>
+ <goal name="VC pre_sp" expl="VC for pre_sp">
+ <proof prover="0"><result status="unknown" time="0.05"/></proof>
+ </goal>
+ <goal name="VC set_and_propagate" expl="VC for set_and_propagate">
+ <proof prover="0"><result status="unknown" time="0.03"/></proof>
+ </goal>
+ <goal name="VC is_in_pos" expl="VC for is_in_pos" proved="true">
+ <proof prover="0"><result status="valid" time="0.03" steps="145"/></proof>
+ </goal>
+ <goal name="VC pure_positive_rule" expl="VC for pure_positive_rule" proved="true">
+ <proof prover="0"><result status="valid" time="0.06" steps="215"/></proof>
+ </goal>
+ <goal name="VC is_in_neg" expl="VC for is_in_neg" proved="true">
+ <proof prover="0"><result status="valid" time="0.04" steps="139"/></proof>
+ </goal>
+ <goal name="VC pure_negative_rule" expl="VC for pure_negative_rule" proved="true">
+ <proof prover="0"><result status="valid" time="0.05" steps="215"/></proof>
+ </goal>
+ <goal name="VC pure_literal_rule" expl="VC for pure_literal_rule" proved="true">
+ <proof prover="0"><result status="valid" time="0.05" steps="215"/></proof>
+ </goal>
+ <goal name="VC pure_in_clause" expl="VC for pure_in_clause">
+ </goal>
+ <goal name="VC transform" expl="VC for transform">
+ <proof prover="0" obsolete="true"><result status="valid" time="0.02" steps="14"/></proof>
+ </goal>
+ <goal name="VC pval_to_val" expl="VC for pval_to_val">
+ <proof prover="0"><result status="unknown" time="0.04"/></proof>
+ </goal>
+ <goal name="VC prelim" expl="VC for prelim">
+ <proof prover="0"><result status="unknown" time="0.03"/></proof>
+ </goal>
+ <goal name="VC sat_Recursive_part" expl="VC for sat_Recursive_part">
+ <proof prover="0"><result status="unknown" time="0.03"/></proof>
+ </goal>
+ <goal name="VC sat" expl="VC for sat">
+ <proof prover="0" obsolete="true"><result status="unknown" time="0.03"/></proof>
+ </goal>
+</theory>
+</file>
+</why3session>
