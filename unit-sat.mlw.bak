@@ -503,13 +503,13 @@ let find_unassigned (pval : pval) (cnf : cnf)  : option lit =
            (result = Some x -> 
              exists y.
              ((0 <= y < length cnf.clauses) && (mem x cnf.clauses[y] && pval[x.var] =? None)))} *)
-  ensures{(result =??? None -> not(exists x y. (0 <= y < length cnf.clauses && mem x cnf.clauses[y] && pval[x.var] =? None)))}
+  ensures{(result = None -> not(exists x y. (0 <= y < length cnf.clauses && mem x cnf.clauses[y] && pval[x.var] =? None)))}
   let result = ref None in
   let index = ref 0 in 
   while ((!index < (length cnf.clauses)) && (!result =??? None)) do
     variant{length cnf.clauses - !index}
     invariant{0 <= !index <= length cnf.clauses}  
-    invariant{(!result =??? None -> not(exists x y. (0 <= y < !index && mem x cnf.clauses[y] && pval[x.var] =? None)))}
+    invariant{(!result = None -> not(exists x y. (0 <= y < !index && mem x cnf.clauses[y] && pval[x.var] =? None)))}
     match (find_unassigned_clause pval cnf.clauses[!index]) with 
     | None -> ()
     | Some x -> 

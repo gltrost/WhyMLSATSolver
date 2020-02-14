@@ -1,0 +1,11 @@
+### Starting build.
+# Target: main.ml.depends, tags: { extension:ml, file:main.ml, ocaml, ocamldep, quiet }
+/Users/gtrost/.opam/default/bin/ocamldep.opt -modules main.ml > main.ml.depends # cached
+# Target: main.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:main.cmo, file:main.ml, implem, ocaml, quiet }
+/Users/gtrost/.opam/default/bin/ocamlc.opt -c -I /Users/gtrost/.opam/default/lib/zarith -o main.cmo main.ml
++ /Users/gtrost/.opam/default/bin/ocamlc.opt -c -I /Users/gtrost/.opam/default/lib/zarith -o main.cmo main.ml
+File "main.ml", line 53, characters 45-52:
+Error: Unbound module Sat
+Hint: Did you mean Set?
+Command exited with code 2.
+# Compilation unsuccessful.

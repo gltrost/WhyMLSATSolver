@@ -74,8 +74,10 @@
  <goal name="VC pure_literal_rule" expl="VC for pure_literal_rule" proved="true">
  <proof prover="0"><result status="valid" time="0.05" steps="215"/></proof>
  </goal>
- <goal name="VC transform" expl="VC for transform" proved="true">
- <proof prover="0"><result status="valid" time="0.02" steps="14"/></proof>
+ <goal name="VC pure_in_clause" expl="VC for pure_in_clause">
+ </goal>
+ <goal name="VC transform" expl="VC for transform">
+ <proof prover="0" obsolete="true"><result status="valid" time="0.02" steps="14"/></proof>
  </goal>
  <goal name="VC pval_to_val" expl="VC for pval_to_val">
  <proof prover="0"><result status="unknown" time="0.04"/></proof>
